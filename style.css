@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.top-bar {
+    background: linear-gradient(
+        to left,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    ); 
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+}
+
+.contact-info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info span {
+    margin-right: 15px;
+}
+
+.social-links a {
+    margin-left: 10px;
+    color: white;
+}
+
+.demo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btntop {
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    width: 80%;
+    margin: auto;
+}
+
+nav .logo h1 {
+    color: #fff;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+}
+
+.links {
+    list-style: none;
+  
+}
+
+nav .links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav .links a {
+    color: black;
+    text-decoration: none;
+}
+
+nav .links .activ {
+    background-color: rgba(255, 204, 0, 0.5);
+    padding: 30px 10px;
+}
+
+nav .header-buttons .btn {
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );  
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.search {
+    background-color: black;
+    color: white;
+    padding: 30px 5px;
+}
+
+.menu-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.show {
+    opacity: 1 !important; /* Ensure it overrides other display settings */
+    height: auto;
+}
+
+/* Responsive styling */
+@media (max-width: 900px) {
+    .top-bar {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .social-links {
+        padding: 12px;
+    }
+
+    .demo span {
+        padding: 12px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+  
+    nav ul{
+        /* display: none; */
+        opacity: 0;
+        height: 60px;
+        padding: 20px;
+        text-align: center;
+    }
+   
+
+    nav .links li {
+        display: block;
+        padding: 15px;
+        padding-top: 20px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .logo, .menu-toggle {
+        position: absolute;
+        top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        right: 10px;
+        top: 20px;
+    }
+}
+
+
+
+
+.hero {
+    background:url('images/Automation-FB.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 20px;
+    position: relative;
+   
+
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content{
+    width: 80%;
+    margin: auto;
+    padding-left: 10px;
+    position: relative;
+}
+.hero-content::after{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 200px;
+  background: linear-gradient(
+    to top,
+    rgba(255, 10, 108, 0.5),
+    rgba(255, 204, 0, 0.5) 
+  );
+  left: 0%;
+  top: 0%;
+
+
+}
+
+.hero h2 {
+    font-size: 25px;
+    font-weight: 60;
+    margin-bottom: 20px;
+    color: #ffffff; 
+    text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.hero-buttons .btn1 {
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );
+        color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.hero-buttons .btn2 {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );  
+      color: #fff;
+    text-align: center;
+  
+
+}
+.containfeaturers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.features .feature {
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+    
+}
+.features .feature p {
+    font-size: 15px;
+}
+ .features .feature .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  box-sizing: border-box;
+} 
+
+.features .feature .icons i{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    
+}   
+
+@media (max-width: 900px) {
+    .containfeaturers{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+    }
+    .features .feature {
+        padding: 0px;
+        width: 45%;
+    }
+
+}
+
+.about {
+    width: 80%;
+    margin: auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.aboutText{
+    width: 50%;
+}
+.aboutText h2{
+
+    padding: 50px 10px ;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+
+}
+.aboutText h2::after{
+
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );    
+    width: 60px;
+    top: 70%;
+    left: 4%;
+
+}
+.aboutText .text1{
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.aboutText .text2{
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.about .btn {
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );   
+     color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 20px;
+}
+.aboutImag{
+    width: 45%;
+}
+.aboutImag img{
+    width: 100%;
+
+}
+
+.aboutImag {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .aboutImag::before {
+    content: '';
+    border: 2px solid ;
+    border-image: linear-gradient(to right, rgba(255, 10, 108, 0.5), rgba(255, 204, 0, 0.5)) 1;
+
+    width: 90%;
+    height: 80px;
+    position: absolute;
+    bottom: 4px;
+    left: 25px;
+    z-index: -1;
+
+  }
+  
+ 
+@media (max-width: 900px) {
+    .about{
+        flex-direction: column;
+
+    }
+    .aboutText , .aboutImag{
+       width: 100%;
+    }
+
+
+}
+
+
+.services {
+   
+    padding: 50px 20px;
+    background-color: rgba(216, 213, 213, 0.589);
+}
+
+
+.services .containerofserv {
+   width: 80%;
+   margin: auto;
+
+}
+.services h2{
+
+    padding: 50px 10px ;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.services h2::after{
+
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );  
+       width: 60px;
+    top: 70%;
+    left: 1%;
+
+}
+.services .service {
+    display: inline-block;
+    width: 30%;
+    background: #f8f8f8;
+    margin: 10px;
+    position: relative;
+
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+
+}
+
+.services .service .icon {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+   width: 90%;
+   height: 35px;
+   position: absolute;
+   right: 0%;  
+   background-color: white;
+
+}
+.services .service .icon i{
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    ); 
+ }
+
+.services .service h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .services .service {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+}
+
+.uptotop {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(
+        to right,
+        rgba(255, 10, 108, 0.5),
+        rgba(255, 204, 0, 0.5)
+    );
+    color: black;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.uptotop.activ {
+    opacity: 1;
+}
